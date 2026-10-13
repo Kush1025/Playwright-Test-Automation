@@ -1,0 +1,82 @@
+{
+  "boardTests": [
+    {
+      "id": "TC1",
+      "project": "Web Application",
+      "task": "Implement user authentication",
+      "column": "To Do",
+      "tags": ["Feature", "High Priority"]
+    },
+    {
+      "id": "TC2",
+      "project": "Web Application",
+      "task": "Fix navigation bug",
+      "column": "To Do",
+      "tags": ["Bug"]
+    },
+    {
+      "id": "TC3",
+      "project": "Web Application",
+      "task": "Design system updates",
+      "column": "In Progress",
+      "tags": ["Design"]
+    },
+    {
+      "id": "TC4",
+      "project": "Mobile Application",
+      "task": "Push notification system",
+      "column": "To Do",
+      "tags": ["Feature"]
+    },
+    {
+      "id": "TC5",
+      "project": "Mobile Application",
+      "task": "Offline mode",
+      "column": "In Progress",
+      "tags": ["Feature", "High Priority"]
+    },
+    {
+      "id": "TC6",
+      "project": "Mobile Application",
+      "task": "App icon design",
+      "column": "Done",
+      "tags": ["Design"]
+    },
+    {
+      "id": "FAIL1",
+      "project": "Web Application",
+      "task": "Implement user authentication",
+      "column": "Done",
+      "tags": ["Feature"],
+      "expectedFailure": "Wrong column on purpose: the task is in To Do, not Done"
+    },
+    {
+      "id": "FAIL2",
+      "project": "Web Application",
+      "task": "Fix navigation bug",
+      "column": "To Do",
+      "tags": ["Feature"],
+      "expectedFailure": "Wrong tag on purpose: Feature is on the neighbouring card, not this one"
+    }
+  ],
+  "invalidLogins": [
+    {
+      "id": "NEG1",
+      "description": "wrong password",
+      "email": "admin",
+      "password": "wrong-password"
+    },
+    {
+      "id": "NEG2",
+      "description": "unknown user",
+      "email": "not-a-real-user",
+      "password": "password123"
+    },
+    {
+      "id": "NEG3",
+      "description": "empty credentials",
+      "email": "",
+      "password": ""
+    }
+  ]
+}

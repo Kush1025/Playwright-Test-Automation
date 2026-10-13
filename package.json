@@ -1,0 +1,40 @@
+{
+  "name": "asana-playwright-data-driven",
+  "version": "1.0.0",
+  "description": "Data-driven Playwright (TypeScript) suite for the Asana-like demo app",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "report": "playwright show-report",
+    "typecheck": "tsc --noEmit",
+    "demo": "cross-env DEMO=1 playwright test",
+    "debug": "playwright test --debug",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "check": "npm run lint && npm run format:check && npm run typecheck",
+    "test:board": "playwright test --grep @board",
+    "test:login": "playwright test --grep @login",
+    "trace": "playwright show-trace",
+    "demo:failure": "cross-env DEMO=1 playwright test --grep @expected-failure"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@eslint/js": "^9.39.5",
+    "@playwright/test": "^1.64.0",
+    "@types/node": "^26.6.5",
+    "cross-env": "^10.1.0",
+    "dotenv": "^18.0.7",
+    "eslint": "^9.39.5",
+    "eslint-plugin-playwright": "^2.12.1",
+    "prettier": "^3.9.10",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.71.2"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "private": true
+}
