@@ -31,14 +31,15 @@ npx playwright install chromium
 
 ## Run
 
-| Command                | What it does                                             |
-| ---------------------- | -------------------------------------------------------- |
-| `npm test`             | Run all tests                                            |
-| `npm run demo`         | Run slowly in a visible browser, highlighting each check |
-| `npm run demo:failure` | Same as demo, only the deliberately failing cases        |
-| `npm run test:ui`      | Open Playwright UI mode                                  |
-| `npm run report`       | Open the HTML report from the last run                   |
-| `npm run check`        | Lint, format check and typecheck                         |
+| Command                | What it does                                              |
+| ---------------------- | --------------------------------------------------------  |
+| `npm test`             | Run all tests                                             |
+| `npm run test:headed`  | Run in a visible browser, with several windows in parallel|
+| `npm run demo`         | Run slowly in a visible browser, highlighting each check  |
+| `npm run demo:failure` | Same as demo, only the deliberately failing cases         |
+| `npm run test:ui`      | Open Playwright UI mode                                   |
+| `npm run report`       | Open the HTML report from the last run                    |
+| `npm run check`        | Lint, format check and typecheck                          |
 
 ## Add a test case
 
