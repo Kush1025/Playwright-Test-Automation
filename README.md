@@ -1,6 +1,6 @@
-# Asana Demo – Playwright Test Suite
+# Demo – Playwright Test Suite
 
-Data-driven Playwright tests (TypeScript) for the Asana-like demo app. All test cases come from `data/testCases.json`, and one test body runs for each entry.
+Data-driven Playwright tests (TypeScript) for the Demo app. All test cases come from `data/testCases.json`, and one test body runs for each entry.
 
 ## What it tests
 
